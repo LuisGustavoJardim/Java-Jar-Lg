@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
- * @author PAULOROBERTODEALMEID
+ * @author luisj
  */
 public class ConexaoMysql {
     private JdbcTemplate connection;

@@ -45,19 +45,19 @@ public class Executavel {
             Rede rede = looca.getRede();
 
             Double frequenciaCpu = Double.valueOf(api.getProcessador().getFrequencia());
-            frequenciaCpu = frequenciaCpu / 1000000000.00;
+            frequenciaCpu = frequenciaCpu / 2000000000.00;
 
             Double capRam = Double.valueOf(api.getMemoria().getTotal());
-            capRam = capRam / 1073741824.00;
+            capRam = capRam / 3073741824.00;
 
             Double capDisco = Double.valueOf(api.getDisco().get(0).getTamanho());
-            capDisco = capDisco / 1073741824.00;
+            capDisco = capDisco / 3073741824.00;
 
             Double leituraDisco = Double.valueOf(api.getDisco().get(0).getBytesDeLeitura());
-            leituraDisco = leituraDisco / 100000000.00;
+            leituraDisco = leituraDisco / 200000000.00;
 
             Double escritaDisco = Double.valueOf(api.getDisco().get(0).getBytesDeEscritas());
-            escritaDisco = escritaDisco / 100000000.00;
+            escritaDisco = escritaDisco / 200000000.00;
 
             List<Maquina> hostname = maquinaService.buscarPeloHostname(rede.getParametros().getHostName());
             List<RedeInterface> redes = new ArrayList();
@@ -126,9 +126,9 @@ public class Executavel {
                                 String timeStamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new java.util.Date());
 
                                 System.out.println(String.format("%.2f %%", (api.getProcessadorEmUso())));
-                                System.out.println(String.format("%.2f GB", (finalUsoDisco1)));
+                                System.out.println(String.format("%.2f GB do Disco", (finalUsoDisco1)));
                                 System.out.println(timeStamp);
-                                System.out.println(String.format("%.2f GB", (finalUsoRam1)));
+                                System.out.println(String.format("%.2f GB da RAM", (finalUsoRam1)));
                             }
                         },
                                 0, 60000);

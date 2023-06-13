@@ -6,7 +6,7 @@ package sptech.jar.track.lg;
 
 /**
  *
- * @author hidek
+ * @author luisj
  */
 import com.github.britooo.looca.api.core.Looca;
 import com.github.britooo.looca.api.group.discos.Disco;

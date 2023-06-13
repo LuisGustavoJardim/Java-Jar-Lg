@@ -6,7 +6,7 @@ package sptech.jar.track.lg;
 
 /**
  *
- * @author PAULOROBERTODEALMEID
+ * @author luisj
  */
 public class Redes {
     private Integer idRede;

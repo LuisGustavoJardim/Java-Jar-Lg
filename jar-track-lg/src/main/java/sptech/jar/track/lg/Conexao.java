@@ -9,7 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
  *
- * @author hidek
+ * @author luisj
  */
 public class Conexao {
     
@@ -26,10 +26,7 @@ public class Conexao {
 
         dataSource.setPassword("#Gfgrupo5");
 
-//        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-//        dataSource.setUrl("jdbc:mysql://localhost:3306/track");
-//        dataSource.setUsername("root");
-//        dataSource.setPassword("paulo1421");
+
 
         this.connection = new JdbcTemplate(dataSource);
     }
